@@ -1,7 +1,6 @@
 import pickle
 import streamlit as st
 import requests
-import gzip
 
 st.set_page_config(page_title='Movie Recommender System', page_icon=':movie_camera:', layout='wide', initial_sidebar_state='auto')
 
@@ -41,7 +40,7 @@ def recommend(movie):
 
 st.header('Movie Recommender System')
 movies = pickle.load(open('movies.pkl','rb'))
-similarity = pickle.load(gzip.open('similarity.pkl.gz','rb'))
+similarity = pickle.load(open('similarity.pkl','rb'))
 
 movie_list = movies['title'].values
 selected_movie = st.selectbox(
