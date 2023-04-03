@@ -18,3 +18,6 @@ The list of available movies is stored in a CSV file. The posters for each movie
 
 ## Credits
 This project was created by Kunal Madan.
+
+## Link to the dataset
+https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata
